@@ -1,0 +1,30 @@
+<div class="container">
+    <h2 class="text-center">Recently Added</h2>
+    <div *ngFor="let blog of userData " class=" mt-5">
+        <div class="row shadow-lg p-4">
+            <div class="col-md-3">
+                <img style=" height:150px" src={{blog.img}} class="card-img-top" alt="" />
+                <h5 style= "height: 30px" class="text-center mt-3">{{blog.title}}</h5>
+            </div>
+            <div class="col-md-9">
+               <p style="text-align: justify;">{{blog.description}}</p>
+            </div>
+        </div>
+       
+    </div>
+    <!-- <div class="row">
+        <div *ngFor="let blog of userData " class="col-md-4 mt-5">
+            <div id="cardStyle" class= "card shadow mx-auto" style= "width: 18rem">
+                <div class="">
+                    <img style=" height:250px" src={{blog.img}} class="card-img-top" alt="" />
+                </div>
+                <div class="card-body">
+                    <h5 style= "height: 30px" class="text-center">{{blog.title}}</h5>
+                </div>
+                <div class="text-center btnClass">
+                    <button class="btn btn-info">Read</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>

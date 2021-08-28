@@ -1,0 +1,27 @@
+.heroBackground{
+    background-image: url("../../../assets/images/photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    z-index: 1;
+}
+.heroBackground::before{
+    position: absolute;
+    content: "";
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgb(28, 27, 53);
+    opacity: .7;
+    z-index: -1;
+}
+.heroBackground h1{
+   text-align: center;
+   color:white;
+   font-family: 'Noto Sans JP', sans-serif;
+
+}
+.welcome{
+   
+}
